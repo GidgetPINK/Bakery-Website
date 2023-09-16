@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sweet Treats Bakery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d01517603b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navBar">
+                <ul id="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <div class="callToAction">
+            <img src="images/cheesecake.png" alt="" />
+            <h1>Sweet Treats Bakery</h1>
+            <p>Where Every Bite is a Delightful Journey of Whimsy and Flavor!</p>
+        </div>
+           
+
+        <main>
+            <section class="banner1">
+                <div class="info-card">
+                    <img src="images/MiniCupcakes.png" alt="" />
+                    <h2>Delicious Minis</h2>
+                    <p>Tiny Cupcakes, Big Delights! Explore our mini wonders</p>
+                </div>
+                
+                <div class="info-card">
+                    <img src="images/birthdayCake.png" alt="" />
+                    <h2>Cakes</h2>
+                    <p>Slice into happiness with our delightful cakes. Perfect for any moment!</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="images/decorCookies.png" alt="" />
+                    <h2>Cookies</h2>
+                    <p>Discover happiness in every bite with our cookies. Treat yourself!</p>
+                </div>
+            </section>
+            
+            <section class="about-section" id="aboutMe">
+            <h2>About Us</h2>
+            <div class="cakeBanner">
+                <img src="images/chocolateCake.png" alt="" />
+                <p>Our journey into the world of confectionery began with an unwavering passion for chocolates and a sweet tooth that knew no bounds. Armed with a formal education in the art of pastry and confectionery, honed at Escoffier School of Culinary Arts, our founder embarked on a delectable adventure. Over the years, with hands-on experience in renowned kitchens and a relentless pursuit of perfection, a deep love for crafting exceptional sweet treats was born. Our commitment to quality, creativity, and an unquenchable passion for all things sweet is what fuels our bakery. We invite you to join us on this mouthwatering journey, where every creation is a labor of love and a tribute to the irresistible world of chocolates and beyond</p>
+            </div>
+        </section>
+
+            <section class="banner2">
+            <div class="info-card">
+                    <img src="images/WeddingCake.png" alt="" />
+                    <h2>Weddings</h2>
+                    <p>Elevate your special day with our bakery's exquisite creations. From enchanting wedding cakes to delightful treats, we add a touch of sweetness to your unforgettable moments.</p>
+                </div>
+                
+                <div class="info-card">
+                    <img src="images/whimsy.png" alt="" />
+                    <h2>Birthdays</h2>
+                    <p>Make birthdays even sweeter with our bakery's delightful creations. From custom cakes to festive treats, we're here to add joy to your celebrations!</p>
+                </div>
+                
+                <div class="info-card">
+                    <img src="images/holiday.png" alt="" />
+                    <h2>Holidays</h2>
+                    <p>Add magic to your holidays with our bakery's seasonal delights. From festive cookies to themed treats, we're here to make your celebrations extra special.</p>
+                </div>
+            </section>
+
+            <form action=" /my-handling-form-page" method= "post" id="contact">
+       
+                <h3>Contact Us!</h3>
+                <div>
+                    <label for="name"></label>
+                    <input placeholder="NAME" type="text" id="name" name="user_name">
+                </div>
+                
+                <div>
+                    <label for="mail"></label>
+                    <input placeholder="EMAIL" type="email" id="mail" name="user_mail">
+                </div>
+                
+                <div>
+                    <label for="msg"></label>
+                    <textarea placeholder="MESSAGE" id="msg" name="user_message"></textarea>
+                </div>
+                
+                <div class="button">
+                    <button type="button" onclick="alert('Thank You!')">Send</button>
+                </div>
+                </form>
+        </main>
+
+        <footer>
+            <p>&copy;2023 Gidgetpink LLC.</p>
+        </footer>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
