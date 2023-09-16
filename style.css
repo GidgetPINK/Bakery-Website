@@ -1,0 +1,276 @@
+
+body{
+    margin: auto;
+    background-color: rgb(31, 18, 9);
+}
+nav{
+  text-align: right;
+  background-color: #fff;
+  padding: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul, li{
+    list-style-type: none;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 15px;
+    color: rgb(31, 18, 9);
+}
+li a:hover{
+  color: rgb(117, 27, 27);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.callToAction{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h1{
+    font-family: 'pacifico', sans-serif;
+    font-size: 99px;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    color: #fff;
+}
+.callToAction p{
+    font-family: 'roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+}
+
+.banner1,
+.banner2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.info-card{
+  width: 15%;
+  height: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.info-card > h2{
+  text-align: center;
+  color: rgb(117, 65, 27);
+}
+.info-card > p {
+  padding: 2%;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(117, 65, 27);
+}
+.info-card img{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 2px;;
+}
+.banner2{
+  margin-top: 85px;
+}
+.about-section h2{
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  margin-top: 30px;
+  font-family: 'pacifico', sans-serif;
+}
+.cakeBanner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cakeBanner img{
+  height: 50vh;
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 10%;
+  margin-bottom: 15px;
+}
+.cakeBanner p{
+  font-size: 25px;
+  padding: 0 100px;
+  color: #fff;
+}
+/*Form Styles*/
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 4em;
+  border: 1px solid #ccc;
+  border-radius: 10px 100px / 120px;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+form > h3{
+  text-align: center;
+  font-family: 'pacifico', sans-serif;
+  color: #fff;
+  font-size: 30px;
+}
+
+/*label {
+  display: inline-block;
+  width: 90px;
+}*/
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+ /* border: 1px solid #999;*/
+  background: #fff;
+  border: 1px inset #f5f5f5;
+  border-radius: 5px;
+}
+
+#name, #mail {
+ height: 35px;
+ font-family: 'Roboto', sans-serif;
+ font-size: 14px;
+ padding-left: 5px;
+}
+
+#msg {
+  height: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+button {
+  margin: 20px 100px 20px 100px;
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #fff;
+  color: rgb(117, 65, 27);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+
+
+
+footer{
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(31, 18, 9);
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media only screen and (min-width: 912px){
+  h1{
+    top: 50px;
+    left: 80px;
+    font-size: 89px;
+    text-shadow: 2px 2px #0f0f0f;
+  }
+  .callToAction p{
+    font-size: 18px;
+    top: 250px;
+    left: 225px;
+  }
+}
+
+
+@media only screen and (max-width: 912px){
+  h1{
+    font-size: 69px;
+    top: 10%;
+    left: 10%;
+    text-shadow: 2px 2px #0f0f0f;
+    position: absolute;
+  }
+  .callToAction p{
+    font-size: 20px;
+    top: 45%;
+    left: 10%;
+    text-shadow: 2px 2px #0f0f0f;
+  }
+  .banner1,
+  .banner2{
+    flex-direction: column;
+  }
+  .info-card{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .cakeBanner{
+    flex-direction: column;
+  }
+  .cakeBanner img{
+    width: 60%;
+  }
+  nav{
+    text-align: center;
+  }
+  li a{
+    font-size: 20px;;
+  }
+  .cakeBanner p {
+    text-align: center;
+  }
+  
+}
+@media only screen and (max-width: 720px){
+  .cakeBanner img{
+    width: 50%;
+    height: 50%;
+  }
+  .cakeBanner p {
+    text-align: center;
+  }
+  #nav-list{
+    display: flex;
+    flex-direction: column;
+  }
+  li a{
+    font-size: 35px;
+    color: #fff;
+  }
+  li{
+    padding: 5px;
+    background-color: rgb(31, 18, 9);
+    border: solid 1px #fff;
+  }
+}
+
+@media only screen and (max-width: 703px){
+  body{
+    width: 530px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  form{
+    width: 300px;
+  }
+}
